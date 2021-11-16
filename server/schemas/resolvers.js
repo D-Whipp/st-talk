@@ -78,6 +78,25 @@ const resolvers = {
 
       throw new AuthenticationError("You need to be logged in!");
     },
+    
+    removeComment: async (parent, args, context) => {
+      if (context.user) {
+        const comment = await Comment.create({
+          ...args,
+          username: context.user.username,
+        });
+
+        await User.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $pull: { comments: comment._id } },
+          { new: true }
+        );
+
+        return comment;
+      }
+
+      throw new AuthenticationError("You need to be logged in!");
+    },
 
     addReaction: async (parent, { commentId, reactionBody }, context) => {
       if (context.user) {
