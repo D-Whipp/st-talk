@@ -1,0 +1,131 @@
+:root {
+  --nav-bg: #000;
+  --nav-fg: #282c34;
+  --pri-blue: #61dafb;
+  --offset: #585858;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--nav-fg);
+  min-height: 100%;
+}
+
+/* ***** Header/Nav ***** */
+header {
+  height: 88px;
+  width: 100%;
+  background-color: var(--nav-bg);
+  color: var(--nav-fg);
+  border-radius: 5px;
+  padding: 14px;
+  justify-content: space-between;
+  /* display: flex; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* z-index: -4; */
+}
+
+header h1 {
+  position: absolute;
+  top: 0;
+  color: var(--nav-fg) !important;
+  text-shadow: 1px 1px var(--pri-blue);
+  font-size: 2rem !important;
+  margin: 1.5rem 0 auto 2rem;
+}
+
+header nav {
+  position: absolute;
+  right: 0;
+  /* margin-right: 44px; */
+  margin: 1.5rem 44px auto 2rem;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.log-btn {
+  text-decoration: none;
+  color: var(--nav-fg) !important;
+  text-shadow: 1px 1px var(--pri-blue);
+  /* background-color: var(--nav-fg);
+  border-radius: 15px; */
+  margin: 1.5rem 44px auto 2rem;
+  padding: 13px 55px;
+  font-size: 1.5rem;
+}
+
+.log-btn:hover {
+  background-color: var(--pri-blue);
+  border-radius: 7px;
+  transition: ease-in-out 500ms;
+}
+
+/* *********** Home Page Layout *********** */
+.home-page-layout {
+  display: flex;
+  justify-content: space-between;
+  background: url(../src/images/bg-space.jpg);
+}
+
+.space-image {
+  /* background-color: darkblue; */
+  background: url(../src/images/space.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  flex: 1;
+  height: 33rem;
+  width: 33rem;
+  margin: 9rem;
+  opacity: 4;
+  /* position: absolute; */
+}
+
+.comments-layout {
+  flex: 1;
+  margin-top: 5rem;
+}
+
+.comment-list-title {
+  color: var(--nav-fg);
+  text-shadow: 1px 1px var(--pri-blue);
+  font-size: 2.5rem;
+}
+
+/* ***** Comment Styles ***** */
+.comment-body-styles {
+  background-color: white;
+  border: red 3px solid;
+  border-radius: 7px;
+  height: 10rem;
+  width: 20rem;
+  margin: 1rem 0;
+  position: relative;
+  /* padding: 1rem; */
+}
+
+.card-header {
+  background-color: var(--offset);
+  /* background-color: var(--nav-bg); */
+  position: absolute;
+  /* top: -44; */
+  bottom: 0;
+  margin-top: 0;
+  padding-left: 0.3rem;
+  /* padding-bottom:.6rem; */
+  height: 2rem;
+  width: 100%;
+}
+
+.text-light {
+  text-decoration: none;
+  color: var(--nav-fg);
+  text-shadow: 1px 1px var(--pri-blue);
+  font-size: 1.5rem;
+}
