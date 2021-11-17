@@ -1,0 +1,39 @@
+Title
+User Story
+As a space Enthusiast
+
+Concept
+Sports-Vibes is an application that gives the user the ability to express their opinions about their favorite sport teams and sporting events through posting pictures and videos.
+They can create threads with other users, linking these images with other ones that are relevant to the given scenario.
+
+
+Process
+Technologies Used: 
+MySQL, Sequelize, 
+Node, SASS, Workbench, 
+Bcrypt, and Express
+
+Breakdown of Project:
+Back End: 	David (SQL), 
+Sean(Node.js, Express.JS)
+Front End: 	Sam (Handlebars, HTML), 
+Benjamin (CSS, HTML)
+
+
+Demo
+
+CHallenges
+Highs: 
+Versatility
+Communication
+Outside Resources
+Growth
+Lows: 
+Updating Dependencies
+Working with Images
+Keeping Personal Repo Up-to-Date
+Getting all these technologies to play nicely with each other
+
+Future Development
+
+Links
