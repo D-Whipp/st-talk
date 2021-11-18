@@ -70,7 +70,7 @@ const CommentList = ({ comments, title }) => {
             <p className="card-header">
               <Link
                 to={`/profile/${comment.username}`}
-                style={{ fontWeight: 700 }}
+                // style={{ fontWeight: 600 }}
                 className="text-light"
               >
                - {comment.username}

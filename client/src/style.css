@@ -75,7 +75,7 @@ header nav {
 
 .space-image {
   /* background-color: darkblue; */
-  background: url(../src/images/space.jpg);
+  background: url(../src/images/space_resized.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 15px;
@@ -100,27 +100,32 @@ header nav {
 
 /* ***** Comment Styles ***** */
 .comment-body-styles {
-  background-color: white;
+  background-color: var(--nav-fg);
   border: red 3px solid;
   border-radius: 7px;
   height: 10rem;
-  width: 20rem;
+  width: 22rem;
   margin: 1rem 0;
+  padding: 0.5rem;
   position: relative;
   /* padding: 1rem; */
 }
 
 .card-header {
-  background-color: var(--offset);
-  /* background-color: var(--nav-bg); */
-  position: absolute;
-  /* top: -44; */
-  bottom: 0;
-  margin-top: 0;
-  padding-left: 0.3rem;
-  /* padding-bottom:.6rem; */
   height: 2rem;
-  width: 100%;
+  width: 80%;
+  background-color: var(--offset);
+  border-radius: 5px;
+  bottom: 0;
+  /* background-color: var(--nav-bg); */
+  /* top: -44; */
+  font-weight: 500;
+  margin: 0 auto;
+  padding-left: 0.3rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* padding-bottom:.6rem; */
 }
 
 .text-light {
