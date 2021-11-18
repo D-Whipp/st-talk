@@ -1,14 +1,14 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import { QUERY_COMMENTS, QUERY_ME_BASIC } from "../utils/queries";
+import { QUERY_COMMENTS } from "../utils/queries";
 import CommentList from "../components/CommentList";
 import Auth from "../utils/auth";
-import FriendList from "../components/FriendList";
+// import FriendList from "../components/FriendList";
 import CommentForm from "../components/CommentForm";
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_COMMENTS);
-  const { data: userData } = useQuery(QUERY_ME_BASIC);
+  // const { data: userData } = useQuery(QUERY_ME_BASIC);
   const comments = data?.comments || [];
   console.log(comments);
 
@@ -35,7 +35,7 @@ const Home = () => {
               // <CommentList className="comment-list-title" comments={comments} title="The Discussion" />
           )}
         </div>
-        {loggedIn && userData ? (
+        {/* {loggedIn && userData ? (
           <div className="col-12 col-lg-3 mb-3">
             <FriendList
               username={userData.me.username}
@@ -43,7 +43,7 @@ const Home = () => {
               friends={userData.me.friends}
             />
           </div>
-        ) : null}
+        ) : null} */}
       </div>
     </main>
   );

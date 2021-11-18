@@ -1,6 +1,6 @@
 // import { useMutation } from "@apollo/client";
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import Auth from "../../utils/auth";
 // import { REMOVE_COMMENT } from "../../utils/mutations";
 // import { QUERY_COMMENTS, QUERY_ME } from "../../utils/queries";
@@ -59,9 +59,9 @@ const CommentList = ({ comments, title }) => {
           <div key={comment._id} className="comment-body-styles">
             <div className="card-body">
               <div className="body-font-styles">
-              <Link className="text-dec" to={`/comment/${comment._id}`}>
-                <p>{comment.commentText}</p>
-                {/* <p className="mb-0">
+                <div className="text-dec">
+                  <p>{comment.commentText}</p>
+                  {/* <p className="mb-0">
                   Response(s): {comment.reactionCount} || Click to{" "}
                   {comment.reactionCount ? "see" : "start"} the discussion!
                 </p> */}
@@ -69,22 +69,19 @@ const CommentList = ({ comments, title }) => {
                   This comment has {comment.reactionCount} response(s). Click to{" "}
                   {comment.reactionCount ? "see" : "start"} the discussion!
                 </p> */}
-              </Link>
+                </div>
               </div>
             </div>
 
             <p className="card-header">
-              <Link
-                to={`/profile/${comment.username}`}
+              <div
+                // to={`/profile/${comment.username}`}
                 // style={{ fontWeight: 600 }}
                 className="text-light"
-               >
-               Written By: {comment.username}
-              </Link>{" "}
-              <div className="text-light">
-                
-              on {comment.createdAt}{" "}
-                 </div>
+              >
+                Written By: {comment.username}
+              </div>{" "}
+              <div className="text-light">on {comment.createdAt} </div>
             </p>
             {/* <div className="card-body">
               <Link to={`/comment/${comment._id}`}>
