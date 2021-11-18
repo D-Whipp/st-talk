@@ -30,7 +30,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  /* z-index: -4; */
+  z-index: 5;
 }
 
 header h1 {
@@ -72,7 +72,7 @@ header nav {
 .home-page-layout {
   display: flex;
   justify-content: space-between;
-  background: url(../src/images/bg-space.jpg);
+  /* background: url(../src/images/bg-space.jpg); */
 }
 
 .space-image {
@@ -126,10 +126,12 @@ header nav {
 } */
 
 .text-dec {
-  /* color: var(--pri-blue); */
-  color: white;
+  color: var(--pri-blue);
+  /* color: white; */
   text-decoration: none;
-  font-size: 1.2rem;
+  /* text-shadow: 1px 1px var(--part-star); */
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .card-header {
@@ -140,7 +142,7 @@ header nav {
   bottom: 1.5rem;
   /* background-color: var(--nav-bg); */
   /* top: -44; */
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 auto;
   padding-left: 0.3rem;
   position: absolute;
@@ -154,5 +156,5 @@ header nav {
   text-decoration: none;
   color: var(--nav-fg);
   text-shadow: 1px 1px var(--pri-blue);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
