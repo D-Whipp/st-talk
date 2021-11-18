@@ -58,13 +58,19 @@ const CommentList = ({ comments, title }) => {
           // <div key={comment._id} className="card mb-3">
           <div key={comment._id} className="comment-body-styles">
             <div className="card-body">
-              <Link to={`/comment/${comment._id}`}>
+              <div className="body-font-styles">
+              <Link className="text-dec" to={`/comment/${comment._id}`}>
                 <p>{comment.commentText}</p>
-                <p className="mb-0">
+                {/* <p className="mb-0">
                   Response(s): {comment.reactionCount} || Click to{" "}
                   {comment.reactionCount ? "see" : "start"} the discussion!
-                </p>
+                </p> */}
+                  {/* <p className="mb-0">
+                  This comment has {comment.reactionCount} response(s). Click to{" "}
+                  {comment.reactionCount ? "see" : "start"} the discussion!
+                </p> */}
               </Link>
+              </div>
             </div>
 
             <p className="card-header">
@@ -72,15 +78,13 @@ const CommentList = ({ comments, title }) => {
                 to={`/profile/${comment.username}`}
                 // style={{ fontWeight: 600 }}
                 className="text-light"
-              >
-               - {comment.username}
+               >
+               Written By: {comment.username}
               </Link>{" "}
-              , {comment.createdAt}{" "}
-              {/* {Auth.loggedIn() && 
-              <button onClick={() => handleDeleteComment(comment.commentId)} className="btn col-12 col-md-3" type="button">
-            Delete
-            </button>
-              } */}
+              <div className="text-light">
+                
+              on {comment.createdAt}{" "}
+                 </div>
             </p>
             {/* <div className="card-body">
               <Link to={`/comment/${comment._id}`}>
