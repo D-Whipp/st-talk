@@ -225,6 +225,8 @@ header nav {
   .home-page-layout {
     display: block;
     align-items: center;
+    /* text-align: center;
+    margin: 0 auto; */
   }
 
   .space-image {
@@ -240,27 +242,49 @@ header nav {
 }
 
 @media screen and (max-width: 420px) {
-  .header-div {
+  /* .header-div { */
+  /* height: 200rem; */
+  /* display: flex; */
+  /* height: 120px; */
+  /* display: block; */
+  /* justify-content: space-between; */
+  /* } */
+
+  .nav-style {
     display: flex;
-    /* height: 120px; */
-    /* display: block; */
-    /* justify-content: space-between; */
+    justify-content: space-between;
+  }
+
+  .left-align {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .right-align {
+    position: fixed;
+    right: 0;
+    top: 0;
   }
 
   .title-header {
     /* display: block; */
     position: absolute;
-    left: 0;
+    left: 20%;
+    margin-top: -0.15rem;
+    /* right: 0; */
+    /* top: 0; */
+    /* bottom: 0; */
     font-size: 1.5rem !important;
     /* display: none; */
   }
 
-  .log-btn {
-    position: fixed;
-    /* z-index: 55; */
+  /* .log-btn { */
+  /* position: fixed; */
+  /* z-index: 55;
     top: 0;
     right: -0;
-  }
+  } */
 
   .space-image {
     height: 10rem;

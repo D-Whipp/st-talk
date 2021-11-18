@@ -15,7 +15,7 @@ const Header = () => {
           <h1 className="title-header">Star Talk</h1>
         </Link>
 
-        <nav className="text-center">
+        <nav className="nav-style">
           {Auth.loggedIn() ? (
             <>
               {/* <Link to="/profile">Me</Link> */}
@@ -25,8 +25,12 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link className="log-btn" to="/login">Login</Link>
-              <Link className="log-btn" to="/signup">Signup</Link>
+              <Link className="log-btn left-align" to="/login">
+                Login
+              </Link>
+              <Link className="log-btn right-align" to="/signup">
+                Signup
+              </Link>
             </>
           )}
         </nav>
