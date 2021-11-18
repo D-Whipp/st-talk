@@ -14,7 +14,7 @@ html,
 body {
   background-color: var(--nav-fg);
   min-height: 100%;
-  font-family: 'Trispace', sans-serif;
+  font-family: "Trispace", sans-serif;
 }
 
 /* ***** Header/Nav ***** */
@@ -72,7 +72,7 @@ header nav {
 .home-page-layout {
   display: flex;
   justify-content: space-between;
-  /* background: url(../src/images/bg-space.jpg); */
+  background: url(../src/images/bg-space.jpg);
 }
 
 .space-image {
@@ -158,3 +158,51 @@ header nav {
   text-shadow: 1px 1px var(--pri-blue);
   font-size: 1.2rem;
 }
+
+/* ***** Login Page ***** */
+.main-login-style {
+  height: 100%;
+  width: 100%;
+  /* background: url(../src/images/bg-space.jpg); */
+  /* display: flex; */
+  /* align-items: center; */
+  /* margin: 0 auto; */
+}
+
+.login-style {
+  /* position: absolute; */
+  margin: 0 auto;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  /* transform: translateX(-50); */
+  transform: translateX(-55%);
+}
+
+.login-header-style {
+  font-size: 2rem;
+  color: var(--pri-blue);
+  font-weight: 670;
+}
+
+.form-input {
+  border-radius: 15px;
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+.login-submit-button {
+  background-color: var(--offset);
+  border-radius: 15px;
+  color: var(--pri-blue);
+  font-size: 1.4rem;
+  font-weight: 570;
+  padding: 0.5rem;
+  /* text-shadow: 1px 1px var(--pri-blue); */
+  margin-top: 1rem;
+}
+
+
+/* ***** Signup ***** */
+

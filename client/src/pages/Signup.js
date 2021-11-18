@@ -38,11 +38,11 @@ const Signup = () => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-md-6">
-        <div className="card">
-          <h4 className="card-header">Sign Up</h4>
-          <div className="card-body">
+    <main className="main-login-style">
+      <div className="login-style">
+        <div>
+          <h4 className="login-header-style">Sign Up</h4>
+          <div>
             <form onSubmit={handleFormSubmit}>
               <input
                 className="form-input"
@@ -71,7 +71,7 @@ const Signup = () => {
                 value={formState.password}
                 onChange={handleChange}
               />
-              <button className="btn d-block w-100" type="submit">
+              <button className="login-submit-button" type="submit">
                 Submit
               </button>
               {error && <div>Sign up failed</div>}
