@@ -203,6 +203,19 @@ header nav {
   margin-top: 1rem;
 }
 
+.login-submit-button:hover {
+  background-color: var(--part-star);
+  transition: ease-in-out 300ms;
+}
 
-/* ***** Signup ***** */
+.failed-signup-style {
+  color: var(--pri-blue);
+  font-size: 2rem;
+  margin-top: 1rem;
+}
 
+/* ***** Comment Form ***** */
+.comment-submit-text {
+  height: 5rem;
+  width: 34rem;
+}

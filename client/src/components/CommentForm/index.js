@@ -28,7 +28,7 @@ const CommentForm = () => {
     },
   });
   const handleChange = (event) => {
-    if (event.target.value.length <= 280) {
+    if (event.target.value.length <= 140) {
       setText(event.target.value);
       setCharacterCount(event.target.value.length);
     }
@@ -52,8 +52,12 @@ const CommentForm = () => {
   };
   return (
     <div>
-      <p className={`m-0 ${characterCount === 280 ? "text-error" : ""}`}>
-        Character Count: {characterCount}/280
+      <p
+        className={`failed-signup-style ${
+          characterCount === 140 ? "text-error" : ""
+        }`}
+      >
+        Character Count: {characterCount}/140
         {error && <span className="ml-2">Something went wront...</span>}
       </p>{" "}
       <form
@@ -63,10 +67,10 @@ const CommentForm = () => {
         <textarea
           placeholder="Here's a new comment..."
           value={commentText}
-          className="form-input col-12 col-md-9"
+          className="form-input comment-submit-text"
           onChange={handleChange}
         ></textarea>
-        <button className="btn col-12 col-md-3" type="submit">
+        <button className="login-submit-button" type="submit">
           Submit
         </button>
       </form>

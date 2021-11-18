@@ -9,8 +9,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-secondary mb-4 py-2 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
+    <header>
+      <div>
         <Link to="/">
           <h1>Star Talk</h1>
         </Link>
@@ -18,8 +18,8 @@ const Header = () => {
         <nav className="text-center">
           {Auth.loggedIn() ? (
             <>
-              <Link to="/profile">Me</Link>
-              <a href="/" onClick={logout}>
+              {/* <Link to="/profile">Me</Link> */}
+              <a className="log-btn" href="/" onClick={logout}>
                 Logout
               </a>
             </>
