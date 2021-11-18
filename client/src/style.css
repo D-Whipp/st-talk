@@ -219,3 +219,56 @@ header nav {
   height: 5rem;
   width: 34rem;
 }
+
+/* ***** Media Queries ***** */
+@media screen and (max-width: 1400px) {
+  .home-page-layout {
+    display: block;
+    align-items: center;
+  }
+
+  .space-image {
+    /* display: block; */
+    width: 70%;
+    margin: 6rem auto;
+    /* padding-top: 14rem; */
+  }
+
+  .comments-layout {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header-div {
+    display: flex;
+    /* height: 120px; */
+    /* display: block; */
+    /* justify-content: space-between; */
+  }
+
+  .title-header {
+    /* display: block; */
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem !important;
+    /* display: none; */
+  }
+
+  .log-btn {
+    position: fixed;
+    /* z-index: 55; */
+    top: 0;
+    right: -0;
+  }
+
+  .space-image {
+    height: 10rem;
+    width: 10rem;
+    margin-top: 8rem;
+  }
+
+  .comment-submit-text {
+    width: 80%;
+  }
+}

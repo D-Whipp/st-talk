@@ -10,9 +10,9 @@ const Header = () => {
 
   return (
     <header>
-      <div>
+      <div className="header-div">
         <Link to="/">
-          <h1>Star Talk</h1>
+          <h1 className="title-header">Star Talk</h1>
         </Link>
 
         <nav className="text-center">
