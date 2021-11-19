@@ -239,6 +239,22 @@ Footer {
   top: 35%;
 }
 
+/* ***** Profile ***** */
+.user-comp-cont-styles {
+  display: flex;
+  text-shadow: 1px 1px var(--pri-blue);
+}
+
+.user-comp-styles {
+  align-items: center;
+  text-align: center;
+}
+
+.comp-header {
+  font-size: 3rem;
+  /* color: var(--pri-blue); */
+}
+
 /* ***** Media Queries ***** */
 @media screen and (max-width: 1400px) {
   .home-page-layout {
@@ -257,6 +273,30 @@ Footer {
 
   .comments-layout {
     display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .user-comp-cont-styles {
+    display: block;
+    width: 100%;
+    align-items: center;
+    /* text-shadow: 1px 1px var(--pri-blue); */
+  }
+
+  .pro-btn {
+    z-index: 444;
+    position: absolute;
+    top: 0;
+    margin-top: -25px;
+    right: 50%;
+  }
+
+  .logout-btn {
+    /* position: absolute;
+    right: 0; */
+    margin-right: -15px;
+    margin-top: -15px;
   }
 }
 

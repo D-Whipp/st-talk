@@ -1,28 +1,58 @@
-Title
+Title - Star Talk
+****************************
 User Story
-As a space Enthusiast
-
+As a space Enthusiast...
+****************************
 Concept
-Sports-Vibes is an application that gives the user the ability to express their opinions about their favorite sport teams and sporting events through posting pictures and videos.
-They can create threads with other users, linking these images with other ones that are relevant to the given scenario.
-
-
+Star Talk is an application where users can congregate online and discuss everything Outer Space related. This includes celestial bodies, shows, and movies (as long as their related to Outer Space)
+****************************
 Process
-Technologies Used: 
-MySQL, Sequelize, 
-Node, SASS, Workbench, 
-Bcrypt, and Express
+Technologies used:
+** Frontend **
+*    Apollo Client - 
+At its core, Apollo Client is a state management library that happens to use GraphQL to interact with a remote server. ... Apollo Client enables you to manage local state alongside remotely fetched state, meaning you can interact with all of your application's state with a single API.
+
+*    GraphQL -
+GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data. GraphQL was developed internally by Facebook in 2012 before being publicly released in 2015
+
+*    React - 
+React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.
+
+*    React-dom -
+ReactDOM is a package that provides DOM specific methods that can be used at the top level of a web app to enable an efficient way of managing DOM elements of the web page. ReactDOM provides the developers with an API containing the following methods and a few more.
+
+*    React-router-dom -
+React Router DOM enables you to implement dynamic routing in a web app. Unlike the traditional routing architecture in which the routing is handled in a configuration outside of a running app, React Router DOM facilitates component-based routing according to the needs of the app and platform.
+
+** Backend **
+
+Apollo-server-express -
+apollo-server-express — apollo-server-express is the Apollo Server package for Express, the most popular Node.js web framework.
+
+*    bcrypt - 
+bcrypt is a password-hashing function designed by Niels Provos and David Mazières, based on the Blowfish cipher and presented at USENIX in 1999.
+
+*    express -
+integrate our Apollo server with the Express application as middleware
+
+*    GraphQL - 
+GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data. GraphQL was developed internally by Facebook in 2012 before being publicly released in 2015
+
+*    JSON WebToken - 
+JSON Web Token is a proposed Internet standard for creating data with optional signature and/or optional encryption whose payload holds JSON that asserts some number of claims. The tokens are signed either using a private secret or a public/private key
+
+*    Mongoose - 
+Mongoose is a Node. js based Object Data Modeling (ODM) library for MongoDB. It is akin to an Object Relational Mapper (ORM) such as SQLAlchemy for traditional SQL databases. The problem that Mongoose aims to solve is allowing developers to enforce a specific schema at the application layer
+
+*************************
 
 Breakdown of Project:
-Back End: 	David (SQL), 
-Sean(Node.js, Express.JS)
-Front End: 	Sam (Handlebars, HTML), 
-Benjamin (CSS, HTML)
+I did it all.
 
 
 Demo
 
-CHallenges
+Challenges
 Highs: 
 Versatility
 Communication

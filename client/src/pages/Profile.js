@@ -1,6 +1,6 @@
 import React from "react";
 import { Redirect, useParams } from "react-router-dom";
-import CommentList from "../components/CommentList";
+// import CommentList from "../components/CommentList";
 import { useQuery } from "@apollo/client";
 import { QUERY_USER, QUERY_ME } from "../utils/queries";
 import Auth from "../utils/auth";
@@ -41,15 +41,25 @@ const Profile = () => {
         </h2>
       </div>
 
-      <div className="posts-container"><h2>Created Components</h2></div>
+      <div className="posts-container">
+        <h2>Created Components</h2>
+      </div>
 
-      <div className="flex-row justify-space-between mb-3">
-        <div className="col-12 mb-3 col-lg-8">
+      <div className="user-comp-cont-styles">
+        <div className="user-comp-styles">
+          <p className="comp-header">Your Components</p>
+        <div className="space-image"></div>
+        </div>
+        <div className="comp-header">
+          <p>Users Preferences</p>
+        </div>
+
+        {/* <div className="comments-layout">
           <CommentList
             comments={user.comments}
             title={`${user.username}'s comments...`}
           />
-        </div>
+        </div> */}
       </div>
       {/* <div className="mb-3">{!userParam && <CommentForm />}</div> */}
     </div>
