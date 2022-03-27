@@ -49,6 +49,10 @@ You can view more of my work at [my github](https://github.com/D-Whipp)
 ## Badges
 
 ![JavaScript-Badge](https://img.shields.io/badge/Language-JavaScript-blue)
-![MongoDB-Badge](https://img.shields.io/badge/Database-MongoDB-green)
+![GraphQL-Badge](https://img.shields.io/badge/graphql-16.0.1-blue)
+![JWT-Badge](https://img.shields.io/badge/jwt--decode-3.1.2-blue)
 ![React-Badge](https://img.shields.io/badge/react-17.0.2-blue)
+![Express-Badge](https://img.shields.io/badge/express-4.17.1-blue)
+![MongoDB-Badge](https://img.shields.io/badge/Database-MongoDB-green)
 ![Mongoose-Badge](https://img.shields.io/badge/mongoose-5.9.9-blue)
+![Apollo-Server-Badge](https://img.shields.io/badge/apollo--server-3.5.0-blue)
