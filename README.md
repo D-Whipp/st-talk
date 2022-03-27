@@ -50,3 +50,5 @@ You can view more of my work at [my github](https://github.com/D-Whipp)
 
 ![JavaScript-Badge](https://img.shields.io/badge/Language-JavaScript-blue)
 ![MongoDB-Badge](https://img.shields.io/badge/Database-MongoDB-green)
+![React-Badge](https://img.shields.io/badge/react-17.0.2-blue)
+![Mongoose-Badge](https://img.shields.io/badge/mongoose-5.9.9-blue)
